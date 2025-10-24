@@ -152,7 +152,7 @@
         // fallback to local mock when not on server
         const MOCK = {
           'RZ-2025-0001': {
-            found: true, id: 'RZ-2025-0001', name: 'Eje de transmisión A12', status: 'En revisión', owner:'Carlos Méndez', lastUpdate:'2025-10-21T10:30:00Z', model:'A12X', notes:'Variación ligera en diámetro', contact:'servicio@tuejemplo.com', progress:60, history:[{time:'2025-10-18T09:00:00Z',title:'Recibido',detail:'Pieza registrada'},{time:'2025-10-19T11:45:00Z',title:'Inspección',detail:'Inspección inicial completada'},{time:'2025-10-21T10:30:00Z',title:'En revisión',detail:'Revisión técnica en curso'}]
+            found: true, id: 'RZ-2025-0001', name: 'CONSOLA XBOX ONE', status: 'En revisión', owner:'GRUPO PANAMA', lastUpdate:'2025-10-21T10:30:00Z', model:'FAT', notes:'', contact:'GARANTIASTPLD@gmail.com', progress:100, history:[{time:'2025-10-18T09:00:00Z',title:'Recibido',detail:'Pieza registrada'},{time:'2025-10-19T11:45:00Z',title:'Inspección',detail:'Inspección inicial completada'},{time:'2025-10-21T10:30:00Z',title:'En revisión',detail:'Revisión técnica en curso'}]
           }
         };
         return MOCK[id] || { found: false };
@@ -169,7 +169,7 @@
     });
 
     document.getElementById('sampleBtn').addEventListener('click', () => {
-      el('trackId').value = 'RZ-2025-0001';
+      el('trackId').value = 'ID-2025-0002';
       document.getElementById('trackForm').dispatchEvent(new Event('submit'));
     });
 
